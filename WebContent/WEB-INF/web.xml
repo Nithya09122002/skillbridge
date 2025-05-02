@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <!-- Welcome File List (Optional, can specify default page) -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- Servlet Configurations -->
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.skillbridge.servlets.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/RegisterServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.skillbridge.servlets.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PostSkillServlet</servlet-name>
+        <servlet-class>com.skillbridge.servlets.PostSkillServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PostSkillServlet</servlet-name>
+        <url-pattern>/PostSkillServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SearchSkillServlet</servlet-name>
+        <servlet-class>com.skillbridge.servlets.SearchSkillServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchSkillServlet</servlet-name>
+        <url-pattern>/SearchSkillServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RequestSessionServlet</servlet-name>
+        <servlet-class>com.skillbridge.servlets.RequestSessionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RequestSessionServlet</servlet-name>
+        <url-pattern>/RequestSessionServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SessionListServlet</servlet-name>
+        <servlet-class>com.skillbridge.servlets.SessionListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SessionListServlet</servlet-name>
+        <url-pattern>/SessionListServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FeedbackServlet</servlet-name>
+        <servlet-class>com.skillbridge.servlets.FeedbackServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FeedbackServlet</servlet-name>
+        <url-pattern>/FeedbackServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SendMessageServlet</servlet-name>
+        <servlet-class>com.skillbridge.servlets.SendMessageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SendMessageServlet</servlet-name>
+        <url-pattern>/SendMessageServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ChatServlet</servlet-name>
+        <servlet-class>com.skillbridge.servlets.ChatServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ChatServlet</servlet-name>
+        <url-pattern>/ChatServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>
