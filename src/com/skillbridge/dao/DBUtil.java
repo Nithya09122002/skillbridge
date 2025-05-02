@@ -7,9 +7,9 @@ import java.sql.SQLException;
 
 public class DBUtil {
     // Database URL, username, and password
-    private static final String DB_URL = "jdbc:mysql://localhost:3306/skillbridge_db";
-    private static final String DB_USER = "root";  // Change with your MySQL username
-    private static final String DB_PASSWORD = "password";  // Change with your MySQL password
+    private static final String DB_URL = "jdbc:h2:mem:testdb"; // In-memory H2 database
+    private static final String DB_USER = "sa"; // Default user for H2
+    private static final String DB_PASSWORD = ""; // No password for H2
 
     // Method to get a connection to the database
     public static Connection getConnection() throws SQLException {
